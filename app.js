@@ -17,12 +17,13 @@ mongoose
 const mascotaRouter = require("./router/mascotas");
 
 //middleware API
-app.use("/api", mascotaRouter)
+app.use(express.json());
+app.use("/api", mascotaRouter);
 
 app.get("/", (req, res) => {
     res.send("Bienvenido a nuestra API con NodeJS")
-})
+});
 
 app.listen(port, () => {
     console.log(`escuchando en el puerto ${port}`);
-})
+});
