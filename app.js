@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/api", mascotaRouter);
 
 app.get("/", (req, res) => {
-    res.send("Bienvenido a nuestra API con NodeJS")
+    res.send("Bienvenido a nuestra API de mascotas con NodeJS")
 });
 
 app.listen(port, () => {
