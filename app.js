@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 // process.env.port es una variable de ambiente para el hosting
-const port = process.env.port || 9000;
+const port = process.env.PORT || 9000;
 // requerimiento de framework dotenv para la lectura de archivos .env
 require('dotenv').config();
 
